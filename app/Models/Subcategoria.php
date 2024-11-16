@@ -10,6 +10,11 @@ class Subcategoria extends Model
     /** @use HasFactory<\Database\Factories\SubcategoriaFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'nombre',
+        'categoria_id'
+    ];
+
     public function categoria()
     {
         return $this->belongsTo(Categoria::class);
