@@ -9,7 +9,7 @@ class SubcategoriaController extends Controller
 {
     public function index()
     {
-        return Subcategoria::with('category')->get();
+        return Subcategoria::with('categoria')->get();
     }
 
     public function store(Request $request)

@@ -18,7 +18,6 @@ class CategoriaController extends Controller
         $validated = $request->validate([
             'nombre' => 'required|string|max:255'
         ]);
-        //Categoria::create($validated);
         return Categoria::create($validated);;
     }
 

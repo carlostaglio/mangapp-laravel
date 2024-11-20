@@ -37,7 +37,7 @@ class MangaController extends Controller
     {
         $validated = $request->validate([
             'titulo' => 'string|max:255',
-            'portada' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'portada' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4096',
             'subcategoria_id' => 'exists:subcategorias,id',
         ]);
 
